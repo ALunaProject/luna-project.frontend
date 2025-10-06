@@ -1,0 +1,1 @@
+# Os componentes pequenos vão ficar nessa pasta
