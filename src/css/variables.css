@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    /* -------- CORES -------- */
+    --neutrals-white: #FAFAFA;
+    --neutrals-black: #090C10;
+
+    /* Gray Scale */
+    --grayscale-eireblack: #10161D;
+    --grayscale-darkgunmetal: #172028;
+    --grayscale-gunmetal: #222A31;
+    --grayscale-lightgunmetal: #343E47;
+    --grayscale-slategray: #858E95;
+    --grayscale-lightslategray: #BBC4CC;
+    --grayscale-seasalt: #DFE6EC;
+    --grayscale-whitesmoke: #F6F6F9;
+
+    /* Blue Violet */
+    --blueviolet-1100: #10002B;
+    --blueviolet-1000: #240046;
+    --blueviolet-900: #3C096C;
+    --blueviolet-800: #5A189A;
+    --blueviolet-700: #7B2CBF;
+    --blueviolet-blueviolet: #8F33DF;
+    --blueviolet-500: #9D4EDD;
+    --blueviolet-400: #BD68EE;
+    --blueviolet-300: #C77DFF;
+    --blueviolet-200: #E0AAFF;
+    --blueviolet-100: #DAC3E8;
+
+    /* Blue Violet Desat */
+
+    --blue-violet-desat-700: #0b0810;
+    --blue-violet-desat-600: #160f1d;
+    --blue-violet-desat-500: #281e32;
+    --blue-violet-desat-400: #40334d;
+    --blue-violet-desat-300: #6b587b;
+    --blue-violet-desat-200: #c9becf;
+    --blue-violet-desat-100: #e4e0e9;
+
+    /* Pure Blue */
+    --pure-blue-700: #1a237e;
+    --pure-blue-600: #283593;
+    --pure-blue-500: #3949ab;
+    --pure-blue: #3f51b5;
+    --pure-blue-300: #5c6bc0;
+    --pure-blue-200: #9fa8da;
+    --pure-blue-100: #e8eaf6;
+
+    /* Pantie Blue */
+    --pantie-blue-700: #154360;
+    --pantie-blue-600: #1f618d;
+    --pantie-blue-500: #2471a3;
+    --pantie-blue: #2980b9;
+    --pantie-blue-300: #7fb3d5;
+    --pantie-blue-200: #a9cce3;
+    --pantie-blue-100: #eaf2f8;
+
+    /* Blue Sky */
+    --blue-sky-700: #0d47a1;
+    --blue-sky-600: #1565c0;
+    --blue-sky-500: #1e88e5;
+    --blue-sky: #2196f3;
+    --blue-sky-300: #64b5f6;
+    --blue-sky-200: #90caf9;
+    --blue-sky-100: #e3f2fd;
+
+    /* GreenGrass */
+    --green-grass-700: #155d27;
+    --green-grass-600: #25a244;
+    --green-grass-500: #28b44b;
+    --green-grass: #2dc653;
+    --green-grass-300: #4ad66d;
+    --green-grass-200: #6ede8a;
+    --green-grass-100: #92e6a7;
+
+    /* Gold Yellow */
+    --gold-yellow-700: #805b10;
+    --gold-yellow-600: #c9a227;
+    --gold-yellow-500: #edc531;
+    --gold-yellow: #ffd400;
+    --gold-yellow-400: #ffe14c;
+    --gold-yellow-300: #ffee99;
+    --gold-yellow-100: #fff6cc;
+
+    /* Mclaren Orange */
+    --mclaren-orange-700: #472400;
+    --mclaren-orange-600: #753b00;
+    --mclaren-orange-500: #d16900;
+    --mclaren-orange: #ff8000;
+    --mclaren-orange-300: #ff962e;
+    --mclaren-orange-200: #ffad5c;
+    --mclaren-orange-100: #ffdbb8;
+
+    /* Clockwork Orange */
+    --clockwork-orange-700: #bf360c;
+    --clockwork-orange-600: #d84315;
+    --clockwork-orange-500: #f4511e;
+    --clockwork-orange: #ff5722;
+    --clockwork-orange-300: #ff7043;
+    --clockwork-orange-200: #ffab91;
+    --clockwork-orange-100: #ffccbc;
+
+    /* BloodyRed */
+    --bloody-red-700: #641e16;
+    --bloody-red-600: #922b21;
+    --bloody-red-500: #a93226;
+    --bloody-red: #c0392b;
+    --bloody-red-300: #e66063;
+    --bloody-red-200: #ec8385;
+    --bloody-red-100: #efadad;
+
+    /* --------- SOMBRAS ----------- */
+    --shadow-focused: 0 0 0 4px rgba(0, 0, 0, 0.25), 0 0 0 4px rgba(143, 51, 223, 0.25);
+    --shadow-toggle-option1: 0 4px 8px rgba(60, 9, 108, 0.27), 0 2px 4px rgba(149, 116, 207, 0.25);
+    --shadow-toggle-option2: 0 4px 8px rgba(60, 9, 108, 0.27), 0 2px 4px rgba(149, 116, 207, 0.25);
+    --shadow-post-card: 0 8px 16px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(11, 8, 16, 1);
+    --shadow-sidebar-effect1: 4px 0 8px rgba(82, 20, 189, 0.1), 2px 0 4px rgba(7, 7, 37, 0.25);
+    --shadow-sidebar-effect2: -4px 0 8px rgba(82, 20, 189, 0.1), -2px 0 4px rgba(7, 7, 37, 0.25);
+    --shadow-hover: 0 8px 16px rgba(143, 51, 223, 0.5);
+    --shadow-card: 0 4px 8px rgba(149, 116, 207, 0.15);
+    --shadow-title: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25)) blur(200%);
+
+    /* -------- FONTES ---------- */
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "ABeeZee", sans-serif;
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* 1rem = 10px pq no global já está declarado rem: 62.5% */
+    --font-size-xs: 1.2rem;
+    --font-size-sm: 1.4rem;
+    --font-size-md: 1.6rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 2.4rem;
+    --font-size-xxl: 3.2rem;
+
+    --line-height-tight: 1.1;
+    --line-height-normal: 1.4;
+    --line-height-loose: 1.6;
+}
