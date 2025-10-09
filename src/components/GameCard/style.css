@@ -1,0 +1,55 @@
+@import url('../../styles/global.css');
+
+.game-card {
+    display: flex;
+    width: 301px;
+    height: 350px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+    border-radius: 12px;
+    background: var(--blue-violet-desat-600);
+
+    box-shadow: 2px 2px 15px 0 rgba(149, 116, 207, 0.15);
+}
+
+.game-card > img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.game-card p {
+    font-family: var(--font-secondary);
+    color: var(--grayscale-whitesmoke);
+}
+
+.card-content {
+    display: flex;
+    padding: 0px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.card-content > p {
+    font-size: 2.4rem;
+}
+
+.game-tags {
+    display: flex;
+    width: 269px;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.game-tags > p {
+    font-size: 1.6rem;
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid var(--blueviolet-blueviolet);
+    background: var(--blueviolet-blueviolet);
+}
+
