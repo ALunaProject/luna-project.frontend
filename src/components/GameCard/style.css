@@ -1,9 +1,13 @@
 @import url('../../styles/global.css');
 
+.cards {
+    display: flex;
+    gap: 12px;
+}
+
 .game-card {
     display: flex;
     width: 301px;
-    height: 350px;
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
@@ -20,20 +24,23 @@
 }
 
 .game-card p {
-    font-family: var(--font-secondary);
+    font-family: var(--font-abeezee), sans-serif;
     color: var(--grayscale-whitesmoke);
 }
 
 .card-content {
     display: flex;
-    padding: 0px 12px;
+    padding: 18px 12px;
     flex-direction: column;
+    gap: 16px;
     align-items: flex-start;
     align-self: stretch;
 }
 
 .card-content > p {
     font-size: 2.4rem;
+    width: 100%;
+    text-wrap: wrap;
 }
 
 .game-tags {
@@ -45,7 +52,8 @@
     flex-wrap: wrap;
 }
 
-.game-tags > p {
+.game-tags > h6 {
+    font-family: var(--font-abeezee), sans-serif;
     font-size: 1.6rem;
     padding: 4px 10px;
     border-radius: 100px;
