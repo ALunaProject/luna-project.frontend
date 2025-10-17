@@ -1,0 +1,53 @@
+@import url('../../styles/global.css');
+
+aside {
+    display: flex;
+    width: 268px;
+    height: 100vh;
+    padding: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #0F081A;
+
+    .logo {
+        display: flex;
+        padding: 16px 24px;
+        align-self: stretch;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo > h6 {
+        font-family: var(--font-abeezee), sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        line-height: 100%;
+    }
+}
+
+.menu-list {
+    display: flex;
+    padding: 24px 16px;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.link {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    gap: 12px;
+}
+
+.more-links {
+    display: flex;
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+}
