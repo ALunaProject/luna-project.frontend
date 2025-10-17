@@ -1,5 +1,9 @@
 @import url('../../styles/global.css');
 
+body {
+    background-color: #160F1D;
+}
+
 .cards {
     display: flex;
     gap: 12px;
@@ -12,14 +16,19 @@
     align-items: flex-start;
     flex-shrink: 0;
 
+
     border-radius: 12px;
     background: var(--blue-violet-desat-600);
 
     box-shadow: 2px 2px 15px 0 rgba(149, 116, 207, 0.15);
+
+    transition: box-shadow 0.3s;
 }
+
 
 .game-card > img {
     width: 100%;
+    height: 202.5px;
     border-radius: 12px 12px 0 0;
 }
 
@@ -31,18 +40,31 @@
 .card-content {
     display: flex;
     padding: 18px 12px;
+    background: var(--blue-violet-desat-600);
+    border-radius: 12px;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
     align-self: stretch;
+
+    transition: margin-top 0.3s;
 }
 
-.card-content:hover {
-    display: flex;
-    width: 301px;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: -120px;
+.game-card:hover {
+    background: var(--blue-violet-desat-600);
+    box-shadow: var(--shadow-hover);
+
+
+    .card-content {
+
+        border-radius: 12px;
+        width: 100%;
+        margin-top: -120px;
+    }
+
+    .card-button {
+        display: flex;
+    }
 }
 
 .card-content > p {
@@ -53,19 +75,47 @@
 
 .game-tags {
     display: flex;
-    width: 269px;
+    width: 100%;
     align-items: flex-start;
     align-content: flex-start;
     gap: 8px;
     flex-wrap: wrap;
 }
 
-.game-tags > h6 {
+.tag > p {
     font-family: var(--font-abeezee), sans-serif;
     font-size: 1.6rem;
     padding: 4px 10px;
     border-radius: 100px;
     border: 1px solid var(--blueviolet-blueviolet);
-    background: var(--blueviolet-blueviolet);
+    background-color: var(--blueviolet-blueviolet);
+}
+
+.card-button {
+    display: none;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    flex-wrap: wrap;
+
+    transition: 0.3s all;
+}
+
+.card-button > button {
+    padding: 6px 8px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+
+    border-radius: 5px;
+    background: var(--blueviolet-700, #7B2CBF);
+    font-size: 1.6rem;
+
+    transition: background-color 0.3s;
+}
+
+.card-button > button:hover {
+    background: var(--blueviolet-800);
 }
 
