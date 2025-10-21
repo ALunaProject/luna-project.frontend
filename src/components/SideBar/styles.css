@@ -4,12 +4,14 @@ aside {
     display: flex;
     width: 268px;
     height: 100vh;
-    padding: 20px 0;
+    padding: 20px 16px;
+    gap: 50px;
     flex-direction: column;
     align-items: flex-start;
     background-color: #0F081A;
 
 }
+
 
 .menu-top {
     display: flex;
@@ -45,12 +47,15 @@ aside {
         font-size: var(--font-size-lg);
     }
 }
+
 .link:hover {
     p {
+
         text-shadow: 0 0 20px rgba(154, 51, 223, 0.50);
     }
+
     img {
-        box-shadow: var(--shadow-hover);
+        filter: drop-shadow(var(--shadow-hover));
     }
 }
 
@@ -88,6 +93,71 @@ aside {
     align-items: center;
     gap: 8px;
 }
+
+
+.search-bar {
+    display: flex;
+    padding: 10px 14px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    border-radius: 100px;
+    border: 1px solid var(--blueviolet-blueviolet);
+}
+
+
+#searchBar {
+    color: var(--grayscale-whitesmoke);
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal);
+}
+
+.filter-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+
+}
+
+.filter-section > p, h3, h4 {
+    color: var(--Neutrals-White, #FAFAFA);
+    font-size: var(--font-size-md);
+    font-weight: 200;
+    /* Essa variavel esta no figma e não esta no Global Style, aguardar merge nas barnches para alterar */
+    line-height: var(--line-height-normal);
+
+}
+
+.filter-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-dropdown {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    padding: 0 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+.filter-dropdown > h4 {
+    font-weight: var(--font-weight-regular);
+}
+
+.filter-title>h3 {
+    font-size: 3.6rem;
+    /* Essa variavel esta no figma e não esta no Global Style, aguardar merge nas barnches para alterar*/
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-loose);
+}
+
 
 @media (max-width: 834px) {
     aside {
