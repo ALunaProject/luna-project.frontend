@@ -1,4 +1,4 @@
-@import url('global.css');
+@import url('../../styles/global.css');
 
 aside {
     display: flex;
@@ -108,7 +108,7 @@ aside {
 
 #searchBar {
     color: var(--grayscale-whitesmoke);
-    font-family: var(--font-poppins);
+    font-family: var(--font-poppins), sans-serif;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-normal);
@@ -124,7 +124,7 @@ aside {
 }
 
 .filter-section > p, h3, h4 {
-    color: var(--Neutrals-White, #FAFAFA);
+    color: var(--neutrals-white, #FAFAFA);
     font-size: var(--font-size-md);
     font-weight: 200;
     /* Essa variavel esta no figma e não esta no Global Style, aguardar merge nas barnches para alterar */
