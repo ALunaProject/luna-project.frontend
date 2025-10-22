@@ -12,6 +12,10 @@ aside {
 
 }
 
+.left-sidebar {
+    gap: unset;
+    padding: 20px 0;
+}
 
 .menu-top {
     display: flex;
