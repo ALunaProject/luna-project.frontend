@@ -1,43 +1,12 @@
 @import "variables.css";
-@import "reset.css";
-
-/* Importe esse arquivo na sua página + src/components/SideBar/styles.css */
+@import 'reset.css';
 
 html {
-  font-size: 62.5%;
-}
-body {
-  background-color: var(--blue-violet-desat-600);
-  display: flex;
+    font-size: 62.5%;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-a,
-button,
-li {
-  font-family: var(--font-poppins), sans-serif;
-  color: var(--grayscale-whitesmoke);
+p, h1,h2,h3,h4,h5,h6, span, a, button, li {
+    font-family: var(--font-poppins), sans-serif;
+    color: var(--grayscale-whitesmoke);
 }
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  padding: 75px 50px 30px 50px;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  max-width: calc(100vw - 536px);
-}
-@media (max-width: 834px) {
-    main {
-        max-width: unset;
-    }
-}
+
