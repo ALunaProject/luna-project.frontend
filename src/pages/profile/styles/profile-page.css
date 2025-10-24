@@ -5,3 +5,17 @@
     padding: unset;
 }
 
+.conteiner-image{
+}
+.header{
+}
+.perfil{
+}
+
+h3{
+    font: var(--font-poppins);
+}
+
+p{
+    font: var(--font-poppins);
+}
