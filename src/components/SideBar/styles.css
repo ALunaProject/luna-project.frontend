@@ -1,171 +1,178 @@
-@import url('../../styles/global.css');
+@import url("../../styles/global.css");
 
 aside {
-    display: flex;
-    width: 268px;
-    height: 100vh;
-    padding: 20px 16px;
-    gap: 50px;
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #0F081A;
-
+  display: flex;
+  width: 268px;
+  height: 100vh;
+  padding: 20px 16px;
+  gap: 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--blue-violet-desat-700);
 }
 
 .left-sidebar {
-    gap: unset;
-    padding: 20px 0;
+  gap: unset;
+  padding: 20px 0;
 }
 
 .menu-top {
-    display: flex;
-    padding: 16px 24px;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.menu-top>h6 {
-    font-family: var(--font-abeezee), sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    line-height: 100%;
+.menu-top > h6 {
+  font-family: var(--font-abeezee), sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 100%;
 }
 
 .menu-list {
-    display: flex;
-    padding: 24px 16px;
-    height: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    align-self: stretch;
+  display: flex;
+  padding: 24px 16px;
+  height: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
 }
 
 .link {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 
-    p {
-        font-size: var(--font-size-lg);
-    }
+  p {
+    font-size: var(--font-size-lg);
+  }
 }
 
 .link:hover {
-    p {
+  p {
+    transition: 0.17s ease-in;
+    text-shadow: 0 0 20px rgba(154, 51, 223, 0.5);
+  }
 
-        text-shadow: 0 0 20px rgba(154, 51, 223, 0.50);
-    }
-
-    img {
-        filter: drop-shadow(var(--shadow-hover));
-    }
+  img {
+    transition: 0.17s ease-in;
+    filter: var(--shadow-hover);
+  }
 }
 
-
 .more-links {
-    display: flex;
-    width: 100%;
-    padding: 20px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    border-top: 1px solid var(--grayscale-seasalt);
-    border-bottom: 1px solid var(--grayscale-seasalt);
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  border-top: 1px solid var(--grayscale-seasalt);
+  border-bottom: 1px solid var(--grayscale-seasalt);
 }
 
 .menu-bottom {
-    display: flex;
-    padding: 0 16px 20px 16px;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+  display: flex;
+  padding: 0 16px 20px 16px;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .profile {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .avatar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
-
 
 .search-bar {
-    display: flex;
-    padding: 10px 14px;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
-    border-radius: 100px;
-    border: 1px solid var(--blueviolet-blueviolet);
+  display: flex;
+  padding: 10px 14px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 100px;
+  border: 1px solid var(--blueviolet-blueviolet);
 }
 
-
 #searchBar {
-    color: var(--grayscale-whitesmoke);
-    font-family: var(--font-poppins), sans-serif;
-    font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-normal);
+  color: var(--grayscale-whitesmoke);
+  font-family: var(--font-poppins), sans-serif;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-normal);
 }
 
 .filter-section {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
 }
 
-.filter-section > p, h3, h4 {
-    color: var(--neutrals-white, #FAFAFA);
-    font-size: var(--font-size-md);
-    font-weight: 200;
-    /* Essa variavel esta no figma e não esta no Global Style, aguardar merge nas barnches para alterar */
-    line-height: var(--line-height-normal);
-
+.filter-section > p,
+h3,
+h4 {
+  color: var(--neutrals-white, #fafafa);
+  font-size: var(--font-size-md);
+  font-weight: 200;
+  /* Essa variavel esta no figma e não esta no Global Style, aguardar merge nas barnches para alterar */
+  line-height: var(--line-height-normal);
 }
 
 .filter-title {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .filter-dropdown {
-    width: 100%;
-    cursor: pointer;
-    display: flex;
-    padding: 0 2px;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: 0 2px;
+  justify-content: space-between;
+  align-items: center;
 }
 .filter-dropdown > h4 {
-    font-weight: var(--font-weight-regular);
+  font-weight: var(--font-weight-regular);
 }
 
-.filter-title>h3 {
-    font-size: 3.6rem;
-    /* Essa variavel esta no figma e não esta no Global Style, aguardar merge nas barnches para alterar*/
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-loose);
+.filter-title > h3 {
+  font-size: 3.6rem;
+  /* Essa variavel esta no figma e não esta no Global Style, aguardar merge nas barnches para alterar*/
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-loose);
 }
-
+.profile > a:hover {
+  img {
+    transition: 0.17s ease-in;
+    filter: var(--shadow-hover);
+  }
+}
 
 @media (max-width: 834px) {
-    aside {
-        width: unset;
+  .right-sidebar {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+    .left-sidebar {
+        display: none;
     }
 
 }
