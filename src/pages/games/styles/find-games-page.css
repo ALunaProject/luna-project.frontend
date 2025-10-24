@@ -187,6 +187,7 @@ aside {
     width: 100%;
     margin-left: 268px;
     margin-right: 268px;
+    padding: unset;
     padding-bottom: 30px;
     overflow-y: auto;
     max-width: calc(100vw - 536px);
@@ -213,6 +214,7 @@ aside {
     background: var(--blue-violet-desat-300);
 }
 
+
 .new-games-tag {
     display: flex;
     padding: 4px 10px;
@@ -226,6 +228,7 @@ aside {
     /* ToggleOption1 */
     box-shadow: 2px 2px 4.8px 0 rgba(60, 9, 108, 0.27), 10px 7px 30px 0 rgba(149, 116, 207, 0.25);
 }
+
 
 .new-games-tag p {
     font-family: var(--font-abeezee), sans-serif;
@@ -243,6 +246,12 @@ aside {
     gap: 10px;
 
     border-radius: 0 100px 100px 0;
+
+    transition: all 0.2s;
+}
+
+.trending-games-tag:hover {
+    box-shadow: var(--shadow-hover);
 }
 
 .trending-games-tag p {
@@ -299,7 +308,7 @@ aside {
 
     box-shadow: var(--shadow-card);
 
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, outline 0.15s ease-out;
 }
 
 .game-card > img {
@@ -316,7 +325,7 @@ aside {
 }
 
 .game-card:hover {
-    box-shadow: var(--shadow-hover);
+    box-shadow:  0 0 20px 5px rgba(154, 51, 223, 0.50);
 }
 
 .game-card:hover .card-content {
@@ -326,6 +335,10 @@ aside {
 .game-card:hover .card-buttons {
     opacity: 1;
     transform: translateY(0);
+}
+
+.game-card:active {
+    outline: 4px solid var(--blueviolet-800);
 }
 
 .card-content {
@@ -362,8 +375,8 @@ aside {
     font-size: 1.6rem;
     padding: 4px 10px;
     border-radius: 100px;
-    border: 1px solid var(--blueviolet-blueviolet);
-    background-color: var(--blueviolet-blueviolet);
+    border: 1px solid var(--blueviolet-800);
+    background-color: var(--blueviolet-800);
 }
 
 .card-buttons {
