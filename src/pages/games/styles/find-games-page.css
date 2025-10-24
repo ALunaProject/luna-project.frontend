@@ -176,13 +176,6 @@ aside {
     rotate: 180deg;
 }
 
-@media (max-width: 834px) {
-    aside {
-        width: unset;
-    }
-
-}
-
 .main-game-page {
     width: 100%;
     margin-left: 268px;
@@ -275,7 +268,7 @@ aside {
     font-size: 4.8rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 67px; /* 67.2px */
+    line-height: 67px;
     letter-spacing: 12px;
 }
 
@@ -295,20 +288,51 @@ aside {
 }
 
 .game-card {
+    position: relative;
     display: flex;
     width: 321px;
     height: 350px;
     flex-shrink: 0;
     flex-direction: column;
     align-items: flex-start;
-    overflow: hidden;
 
     border-radius: 12px;
     background: var(--blue-violet-desat-600);
 
     box-shadow: var(--shadow-card);
 
-    transition: box-shadow 0.3s, outline 0.15s ease-out;
+    transition: box-shadow 0.2s;
+}
+
+.game-card::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: var(--gradients-card-active);
+    background-size: 320% 320%;
+    background-position: 0 50%;
+    border-radius: 12px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.game-card:active::before {
+    opacity: 1;
+    animation: moveGradient 2s alternate infinite;
+}
+
+.game-card:hover {
+    box-shadow: 0 0 20px 5px rgba(154, 51, 223, 0.50);
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 .game-card > img {
@@ -324,9 +348,7 @@ aside {
     color: var(--grayscale-whitesmoke);
 }
 
-.game-card:hover {
-    box-shadow:  0 0 20px 5px rgba(154, 51, 223, 0.50);
-}
+
 
 .game-card:hover .card-content {
     transform: translateY(-120px);
@@ -335,10 +357,6 @@ aside {
 .game-card:hover .card-buttons {
     opacity: 1;
     transform: translateY(0);
-}
-
-.game-card:active {
-    outline: 4px solid var(--blueviolet-800);
 }
 
 .card-content {
@@ -402,14 +420,21 @@ aside {
     background: var(--blueviolet-700, #7B2CBF);
     font-size: 1.6rem;
 
-    position: relative; /* ADICIONE ESTA LINHA */
-    overflow: visible; /* ADICIONE ESTA LINHA também */
+    position: relative;
+    overflow: visible;
 
     transition: all 0.2s;
 }
 
 .card-buttons button:hover {
     background: var(--blueviolet-800);
+
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
 }
 
 .card-buttons button:active {
