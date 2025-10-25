@@ -100,7 +100,6 @@ main h2 {
 
 .news-info {
     display: flex;
-    padding: 20px 0;
     width: 100%;
     transition: 0.15s ease-out;
     padding: 20px 20px 20px 0;
@@ -139,7 +138,7 @@ main h2 {
     background: var(--blueviolet-blueviolet);
 
     p {
-        font-family: var(--font-abeezee);
+        font-family: var(--font-abeezee), sans-serif;
         font-size: var(--font-size-base);
         font-weight: var(--font-weight-regular);
     }
