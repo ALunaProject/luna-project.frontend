@@ -13,6 +13,9 @@
   font-weight: var(--font-weight-thin);
   font-size: var(--font-size-base);
 }
+.filter-dropdown img {
+  rotate: 180deg;
+}
 
 main {
   gap: 10px;
@@ -97,6 +100,9 @@ main h2 {
     border-radius: 12px 0 0 12px;
   }
 }
+.news-card:active {
+  outline: 4px solid var(--blueviolet-blueviolet);
+}
 
 .news-info {
   display: flex;
@@ -172,7 +178,6 @@ main h2 {
   }
   .right-sidebar {
     display: none;
-  
   }
 }
 
