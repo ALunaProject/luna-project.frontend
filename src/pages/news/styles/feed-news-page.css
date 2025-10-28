@@ -101,7 +101,7 @@ main h2 {
   }
 }
 .news-card:active {
-  outline: 4px solid var(--blueviolet-blueviolet);
+  outline: 2.5px solid var(--blueviolet-blueviolet);
 }
 
 .news-info {
