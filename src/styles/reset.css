@@ -57,12 +57,6 @@ button {
     cursor: pointer;
 }
 
-/* Avoid text select highlights */
-::selection {
-    background-color: transparent;
-    color: inherit;
-}
-
 /* Clear the default styles for blockquotes */
 blockquote {
     margin: 0;
