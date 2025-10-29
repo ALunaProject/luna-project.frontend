@@ -6,6 +6,27 @@ body {
 main {
     width: 100%;
 }
+.letrero {
+
+
+    p {
+    color: var(--grayscale-whitesmoke);
+    text-align: center;
+
+    font-family: var(--font-poppins), sans-serif;
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-normal);
+    letter-spacing: 12.48px;
+    }
+}
+.post-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
 .post-card {
     display: flex;
     flex-direction: column;
@@ -13,13 +34,16 @@ main {
     gap: 20px;
     padding: 30px 50px;
     width: -webkit-fill-available;
+    box-shadow: var(--shadow-post-card);
 }
 .profile-tag {
     display: flex;
+    justify-content: space-between;
     gap: 24px;
-
+    width: 100%;
     align-items: center;
-    padding: 22.8px;
+
+
 }
 .profile-wrapper {
     display: flex;
@@ -40,6 +64,7 @@ main {
     img {
         width: 72.595px;
         height: 72.595px;
+        border-radius: 100%;
         aspect-ratio: 72.59/72.59;
     }
 }
