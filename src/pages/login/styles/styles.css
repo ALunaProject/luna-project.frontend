@@ -41,9 +41,10 @@ section {
   padding: 100px 40px;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
-  border: 4px solid #8f33df;
-  background: rgba(40, 30, 50, 0.5);
+  gap: 30px;
+  border-radius: 25px;
+  border: 2px solid var(--blueviolet-blueviolet);
+  background: rgba(40, 30, 50, 0);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset,
     0 4px 4px 0 rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(15px);
@@ -58,42 +59,87 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 60px;
-
+  align-items: center;
+  gap: 30px;
   width: 100%;
-  align-self: stretch;
 }
 
 fieldset {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: flex-start;
   gap: 6px;
-  align-self: stretch;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  gap: 16px;
 }
 .input {
   display: flex;
   padding: 10px 14px;
   align-items: center;
+  width: 100%;
   gap: 8px;
-  align-self: stretch;
   border-radius: 100px;
   border: 1px solid var(--blueviolet-blueviolet);
+  img {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 label {
   color: var(--neutrals-white);
   font-family: var(--font-poppins), sans-serif;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   font-weight: var(--font-weight-regular);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    color: var(--blueviolet-800);
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+    img {
+      transition: 0.15s ease-in-out;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  span:hover {
+    img {
+      filter: drop-shadow(0 0 10px var(--blueviolet-blueviolet));
+    }
+    color: var(--blueviolet-blueviolet);
+    text-shadow: 0 0 20px rgba(154, 51, 223, 1);
+  }
 }
 
 input {
-  color: var(--blue-violet-desat-400);
+  color: var(--neutrals-white);
   font-family: var(--font-poppins);
+  width: 100%;
   font-size: var(--font-size-base);
   font-weight: var(--font-weight-regular);
+}
+input::placeholder {
+  color: var(--blue-violet-desat-400);
+}
+input:focus {
+  background-color: transparent;
+  outline: transparent;
+}
+input:active {
+  background-color: transparent;
 }
 
 form button {
@@ -104,26 +150,24 @@ form button {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  border-radius: 5px;
   background-color: var(--blueviolet-blueviolet);
   font-size: var(--font-size-base);
   font-family: var(--font-abeezee);
-  box-shadow: 5px 5px 0 var(--neutrals-black),
-    10px 10px 0 var(--blueviolet-blueviolet);
 }
 form button:active {
-  transform: translate(5px, 5px);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset,
     0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 form p {
-    width: 100%;
-    font-family: var(--font-abeezee);
-    font-size: var(--font-size-base);
-    text-align: center;
-    a {
-        text-decoration: underline;
-        color: var(--blueviolet-blueviolet);
-    }
+  width: 100%;
+  font-family: var(--font-abeezee);
+  font-size: var(--font-size-sm);
+  text-align: center;
+  a {
+    text-decoration: underline;
+    color: var(--blueviolet-blueviolet);
+  }
 }
 @media (max-width: 450px) {
   logo {

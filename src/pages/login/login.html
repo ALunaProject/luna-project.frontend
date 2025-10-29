@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <title>Luna | Faça seu login agora!</title>
     <link rel="stylesheet" href="../about-luna/about-luna.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/input-animation.css" />
   </head>
   <body>
     <div class="logo">
@@ -15,27 +14,40 @@
     <section>
       <h1>Faça seu Login</h1>
       <form action="../about-luna/about-luna.html" method="get">
-        <fieldset class="brutalist-container">
-          <input
-            placeholder="DIGITE SEU EMAIL"
-            class="brutalist-input smooth-type"
-            type="email"
-            id="email"
-          />
-          <label class="brutalist-label">SEU EMAIL</label>
-        </fieldset>
+        <fieldset class="input-wrapper">
+          <fieldset>
+            <label for="email">Email</label>
+            <div class="input">
+              <img src="../../assets/icons/mail.svg" alt="-icon" />
+              <input placeholder="Digite seu email" type="email" id="email" />
+            </div>
+          </fieldset>
 
-        <fieldset class="brutalist-container">
-          <input
-            placeholder="DIGITE SUA SENHA"
-            class="brutalist-input smooth-type"
-            type="password"
-            id="password"
-          />
-          <label class="brutalist-label">SUA SENHA</label>
+          <fieldset>
+            <label style="width: 100%" for="password"
+              >Senha
+              <span
+                ><img
+                  src="../../assets/icons/eye.svg"
+                  alt="password-eye-icon"
+                />
+                Mostrar</span
+              ></label
+            >
+            <div class="input">
+              <img src="../../assets/icons/lock.svg" alt="-icon" />
+              <input
+                placeholder="Digite sua senha"
+                type="password"
+                id="password"
+              />
+            </div>
+          </fieldset>
         </fieldset>
-        <p>Não tem uma conta? <a href="./sign-in.html">Crie sua conta agora!</a></p>
         <button type="submit">Enviar</button>
+        <p>
+          Não tem uma conta? <a href="./sign-in.html">Crie sua conta agora!</a>
+        </p>
       </form>
     </section>
     <!-- <script src="login.js"></script> -->
