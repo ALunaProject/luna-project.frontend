@@ -1,3 +1,6 @@
+html {
+  overflow-x: clip;
+}
 .left-sidebar .menu-top h6 {
   font-family: var(--font-archivo-narrow), sans-serif;
   font-size: var(--font-size-4xl);
@@ -8,6 +11,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+aside {
+  width: 268px;
 }
 .avatar-name {
   font-weight: var(--font-weight-thin);
