@@ -1,6 +1,7 @@
 main {
     max-width: unset;
     gap: 20px;
+    width: 81.38%;
 
     p {
         font-family: var(--font-poppins), sans-serif;
@@ -113,9 +114,10 @@ main {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 610px) {
     main {
         padding: 75px 30px 30px 30px;
+        width: 100%;
     }
 
     .logo img {
