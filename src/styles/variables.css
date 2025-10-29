@@ -154,7 +154,7 @@
   --shadow-sidebar-effect1: 5px 0 30px rgba(7, 7, 37, 0.25);
   --shadow-sidebar-effect2: -5px 0 30px rgba(7, 7, 37, 0.25);
   --shadow-hover: 0 0 20px 5px rgba(154, 51, 223, 0.50);
-  --shadow-card: 2px 2px 15px 0 rgba(149, 116, 207, 0.15);
+  --shadow-card: 2px 2px 15px rgba(149, 116, 207, 0.15);
   --shadow-title: blur(100px);
 
   /* -------- FONTES ---------- */
