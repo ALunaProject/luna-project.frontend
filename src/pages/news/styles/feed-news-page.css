@@ -1,6 +1,3 @@
-html {
-  overflow-x: clip;
-}
 .left-sidebar .menu-top h6 {
   font-family: var(--font-archivo-narrow), sans-serif;
   font-size: var(--font-size-4xl);
@@ -11,9 +8,6 @@ html {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-aside {
-  width: 268px;
 }
 .avatar-name {
   font-weight: var(--font-weight-thin);
@@ -181,6 +175,7 @@ main h2 {
 @media (max-width: 964px) {
   main {
     max-width: unset;
+    width: 74.4444%;
   }
   .right-sidebar {
     display: none;
@@ -190,6 +185,7 @@ main h2 {
 @media (max-width: 450px) {
   main {
     padding: 75px 30px 30px 30px;
+    width: 100%;
     h2 {
       font-size: var(--font-size-2xl);
     }
