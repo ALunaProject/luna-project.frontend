@@ -175,6 +175,7 @@ main h2 {
 @media (max-width: 964px) {
   main {
     max-width: unset;
+    width: 74.4444%;
   }
   .right-sidebar {
     display: none;
@@ -184,6 +185,7 @@ main h2 {
 @media (max-width: 450px) {
   main {
     padding: 75px 30px 30px 30px;
+    width: 100%;
     h2 {
       font-size: var(--font-size-2xl);
     }
