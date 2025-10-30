@@ -13,24 +13,27 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 70px 20px 70px 20px;
+  padding: 100px 100px 30px 100px;
   background-image: url(../../../assets/images/login-page-bg.png);
   background-size: cover;
   gap: 30px;
 }
+
 .logo {
   flex-direction: row;
   padding: unset;
   gap: 20px;
-  img {
-    height: 137.667px;
-    flex: 1 0 0;
-    aspect-ratio: 119/137.67;
-  }
-  p {
-    font-size: var(--font-size-6xl);
-    line-height: var(--line-height-tight);
-  }
+}
+.logo img {
+  height: 137.667px;
+  width: unset;
+  flex: 1 0 0;
+  aspect-ratio: 119/137.67;
+  width: unset;
+}
+.logo p {
+  font-size: var(--font-size-6xl);
+  line-height: var(--line-height-tight);
 }
 
 section {
@@ -86,10 +89,10 @@ fieldset {
   gap: 8px;
   border-radius: 100px;
   border: 1px solid var(--blueviolet-blueviolet);
-  img {
-    width: 24px;
-    height: 24px;
-  }
+}
+.input img {
+  width: 24px;
+  height: 24px;
 }
 
 label {
@@ -100,28 +103,27 @@ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    color: var(--blueviolet-800);
-    transition: 0.15s ease-in-out;
-    cursor: pointer;
-    img {
-      transition: 0.15s ease-in-out;
-      width: 20px;
-      height: 20px;
-    }
-  }
-  span:hover {
-    img {
-      filter: drop-shadow(0 0 10px var(--blueviolet-blueviolet));
-    }
-    color: var(--blueviolet-blueviolet);
-    text-shadow: 0 0 20px rgba(154, 51, 223, 1);
-  }
+}
+label span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: var(--blueviolet-800);
+  transition: 0.15s ease-in-out;
+  cursor: pointer;
+}
+label span img {
+  transition: 0.15s ease-in-out;
+  width: 20px;
+  height: 20px;
+}
+label span:hover img {
+  filter: drop-shadow(0 0 10px var(--blueviolet-blueviolet));
+}
+label span:hover {
+  color: var(--blueviolet-blueviolet);
+  text-shadow: 0 0 20px rgba(154, 51, 223, 1);
 }
 
 input {
@@ -164,20 +166,17 @@ form p {
   font-family: var(--font-abeezee);
   font-size: var(--font-size-sm);
   text-align: center;
-  a {
-    text-decoration: underline;
-    color: var(--blueviolet-blueviolet);
-  }
 }
-@media (max-width: 450px) {
-  logo {
-    img {
-      width: 57px;
-      height: 67px;
-      aspect-ratio: 57/67;
-    }
-    p {
-      font-size: var(--font-size-3xl);
-    }
+form p a {
+  text-decoration: underline;
+  color: var(--blueviolet-blueviolet);
+}
+
+@media (max-width: 835px) {
+  section {
+    max-width: unset;
+  }
+  body {
+    padding: 70px 30px 30px 30px;
   }
 }

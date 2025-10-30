@@ -1,7 +1,7 @@
 main {
   max-width: unset;
   gap: 20px;
-  width: 74.4444%;
+  width: 100%;
 
   p {
     font-family: var(--font-poppins), sans-serif;
@@ -112,8 +112,12 @@ main {
     width: 332px;
   }
 }
-
-@media (max-width: 450px) {
+@media (max-width: 1440px) {
+  main {
+    width: 74.444%;
+  }
+}
+@media (max-width: 520px) {
   main {
     padding: 75px 30px 30px 30px;
     width: 100%;
