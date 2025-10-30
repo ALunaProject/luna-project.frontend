@@ -4,4 +4,49 @@
     max-width: unset;
     padding: unset;
 }
+.main-profile > img {
+    width: 100%;
+}
 
+.fosae {
+    margin-top: -100px;
+}
+.my-tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 8px;
+    width: 100%;
+    flex-wrap: wrap;
+    font-family: var(--font-abeezee);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+}
+
+.tag{
+    border-radius: 100px;
+    padding: 4px 10px;
+    border: 1px solid var(--BlueViolet-BlueViolet, #8F33DF);
+    background: var(--BlueViolet-BlueViolet, #8F33DF);
+}
+.tag p {
+    font-size: 12px;
+}
+
+h3 {
+    color: var(--Neutrals-White, #FAFAFA);
+    font-family:var(--font-poppins) ;
+    font-size: var(--font-size-2xl);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-normal)/* 37.5px */
+}
+p{
+    color: var(--Neutrals-White, #FAFAFA);
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-loose); 
+}
