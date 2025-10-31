@@ -25,6 +25,7 @@ aside {
 .left-sidebar {
   gap: unset;
   padding: 20px 0;
+  width: 18.61%;
 }
 
 .menu-top {
@@ -173,15 +174,19 @@ h4 {
     filter: var(--shadow-hover);
   }
 }
+@media (max-width: 1667px) {
+  .left-sidebar {
+    width: 268px;
+  }
+}
 
 @media (max-width: 834px) {
   .right-sidebar {
     display: none;
   }
 }
-@media (max-width: 450px) {
-    .left-sidebar {
-        display: none;
-    }
-
+@media (max-width: 582px) {
+  .left-sidebar {
+    display: none;
+  }
 }
