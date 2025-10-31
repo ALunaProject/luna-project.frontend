@@ -3,6 +3,11 @@ body {
     display: flex;
     flex-direction: row;
 }
+.avatar-name {
+    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-base);
+}
+
 main {
     width: 100%;
 }
