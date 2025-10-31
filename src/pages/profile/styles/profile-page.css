@@ -1,21 +1,64 @@
 @import url("../../../styles/global.css");
 
-.main-profile {
+main {
     max-width: unset;
     padding: unset;
+
 }
 
-.conteiner-image{
-}
-.header{
-}
-.perfil{
+.banner > img {
+    width: 100%;
 }
 
-h3{
-    font: var(--font-poppins);
+.avatar-conteiner{
+    width: 100%;
 }
 
-p{
-    font: var(--font-poppins);
+.avatar-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -100px;
+    gap: 30px;
+}
+
+.avatar-info > h3{
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-2xl);
+    line-height: var(--line-height-normal);
+}
+
+.avatar-info > p{
+    font-family: var(--font-poppins);
+    font-size:var(--font-size-xl);
+    line-height: var(--line-height-loose);
+}
+
+.random-tags{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+
+}
+
+.tags{
+    display: flex;
+    padding: 4px 10px 4px 10px;
+    justify-content: center;
+
+    border-radius: 100px;
+    border: 1px solid var(--blueviolet-blueviolet);
+    background: var(--blueviolet-blueviolet);
+
+}
+.tags > p{
+
+    font-family: var(--font-abeezee);
+    font-size: var(--font-size-base);
 }
