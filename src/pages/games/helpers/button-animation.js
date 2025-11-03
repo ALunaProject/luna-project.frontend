@@ -1,19 +1,18 @@
 document.querySelectorAll('.card-buttons button').forEach(button => {
     button.addEventListener('click', function(e) {
-        // Para a propagação do evento
         e.stopPropagation();
 
-        // Remove a classe de TODOS os botões
+        e.preventDefault();
+
         document.querySelectorAll('.card-buttons button').forEach(btn => {
             btn.classList.remove('animating');
         });
 
-        // Pequeno delay para garantir que a classe foi removida
+        // Adiciona a animação no botão clicado
         setTimeout(() => {
-            // Adiciona apenas no botão clicado
             this.classList.add('animating');
 
-            // Remove após a animação
+            // Remove a classe após a animação terminar
             setTimeout(() => {
                 this.classList.remove('animating');
             }, 600);
