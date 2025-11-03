@@ -11,6 +11,11 @@ body {
 main {
     width: 100%;
 }
+.filter-dropdown {
+    img{
+        transform: rotate(180deg);
+    }
+}
 
 main h2 {
     text-align: center;
@@ -18,6 +23,9 @@ main h2 {
     font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-relaxed);
     letter-spacing: 12.48px;
+}
+img {
+    object-fit: cover;
 }
 
 .title {
@@ -53,6 +61,8 @@ main h2 {
     gap: 20px;
     padding: 30px 50px;
     width: -webkit-fill-available;
+    background-color: var(--blue-violet-desat-600);
+    z-index: 1;
     box-shadow: var(--shadow-post-card);
 
     p {
@@ -63,8 +73,6 @@ main h2 {
         font-weight: var(--font-weight-regular);
         line-height: var(--line-height-loose); /* 27px */
     }
-
-
 }
 .post-card:hover {
     box-shadow: 0 0 20px 5px rgba(154, 51, 223, 0.50);
@@ -82,7 +90,7 @@ main h2 {
 .profile-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     gap: 24px;
     flex-wrap: wrap;
@@ -131,11 +139,12 @@ main h2 {
 }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1000px) {
     .profile-tag{
         display: flex;
         flex-direction: column;
         align-items: center;
+        word-break: break-all;
     }
 }
 @media (max-width: 1385px) {
@@ -146,6 +155,35 @@ main h2 {
 @media (max-width: 995px) {
     .profile-wrapper, .tags-wrapper {
         justify-content: center;
+        flex-wrap: wrap;
     }
+}
+@media (max-width: 834px) {
+    main {
+        width: 74.444%;
+    }
+}
+/*mobile*/
+@media (max-width: 585px) {
+    .main{
+        padding: 30px 0;
+    }
+    .post-card-wrapper {
+        padding: 0 0;
+    }
+    .profile-wrapper {
+        img {
+            width: 45px;
+            height: 45px;
+        }
+        p {
+            color: var(--grayscale-seasalt);
 
+            /* Poppins Font/Poppins Regular/2xl */
+            font-family: Poppins;
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-regular);
+            line-height: var(--line-height-loose); /* 30px */
+        }
+    }
 }
