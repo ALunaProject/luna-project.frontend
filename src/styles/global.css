@@ -33,6 +33,7 @@ main {
   height: 100vh;
   padding: 75px 50px 30px 50px;
   overflow-y: scroll;
+  overflow-x: hidden;
   scrollbar-width: none;
   max-width: calc(100vw - 536px);
 }
