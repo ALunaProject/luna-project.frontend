@@ -164,10 +164,6 @@ body {
     text-wrap: wrap;
 }
 
-.game-title-wrapper > img {
-    width: 30px;
-    height: 30px;
-}
 .game-card p {
     font-family: var(--font-abeezee), sans-serif;
     color: var(--grayscale-whitesmoke);
