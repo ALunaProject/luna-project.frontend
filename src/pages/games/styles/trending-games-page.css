@@ -22,7 +22,7 @@ body {
 
 .toggle-games-button {
     display: flex;
-    width: 156px;
+    width: 157px;
     align-items: center;
 
     position: relative;
@@ -58,7 +58,7 @@ body {
 
 .trending-games-tag {
     display: flex;
-    padding: 4px 10px;
+    padding: 4px 12px;
     justify-content: center;
     align-items: flex-end;
     gap: 10px;
@@ -115,10 +115,10 @@ body {
 .game-card::before {
     content: "";
     position: absolute;
-    top: -1.2px;
-    left: -2px;
+    top: -2.5px;
+    left: -2.2px;
     right: -2px;
-    bottom: -1px;
+    bottom: -3px;
     background: var(--gradients-card2-active);
     background-size: 320% 320%;
     background-position: 0 50%;
@@ -151,6 +151,23 @@ body {
     border-radius: 12px 12px 0 0;
 }
 
+.game-title-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game-title-wrapper > p {
+    font-size: 2.4rem;
+    width: 100%;
+    text-wrap: wrap;
+}
+
+.game-title-wrapper > img {
+    width: 30px;
+    height: 30px;
+}
 .game-card p {
     font-family: var(--font-abeezee), sans-serif;
     color: var(--grayscale-whitesmoke);
@@ -178,12 +195,6 @@ body {
     flex: 1;
 
     transition: transform 0.3s;
-}
-
-.card-content > p {
-    font-size: 2.4rem;
-    width: 100%;
-    text-wrap: wrap;
 }
 
 .game-tags {
