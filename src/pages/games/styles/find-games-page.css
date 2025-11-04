@@ -76,7 +76,7 @@ body {
 }
 
 .trending-games-tag:hover {
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--shadow-toggle-option1);
 }
 
 .trending-games-tag p {
