@@ -13,12 +13,6 @@ body {
     width: 268px;
 }
 
-@media (max-width: 834px) {
-    main {
-        width: 74.444%;
-    }
-}
-
 .hero-image {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -236,21 +230,38 @@ body {
     .game-container {
         flex-direction: column;
     }
-
     .rating-container{
         width: 100%;
     }
-
     .rating-wrapper {
         width: 100%;
     }
-
     .overall-score {
         margin: 0 auto;
         width: 100%;
     }
-
     .ratings {
         margin-left: auto;
+    }
+}
+
+@media (max-width: 834px) {
+    main {
+        width: 74.444%;
+    }
+}
+
+@media (max-width: 647px) {
+    .left-sidebar {
+        display: none;
+    }
+    main {
+        width: unset;
+    }
+}
+
+@media (max-width: 414px) {
+    .rating-wrapper {
+        flex-direction: column;
     }
 }
