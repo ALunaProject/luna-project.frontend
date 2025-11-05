@@ -7,6 +7,14 @@ main{
 .left-sidebar {
     width: 26.5%;
 }
+.post-card{
+    padding: 0;
+    box-shadow: unset;
+    cursor: unset;
+}
+.post-card:hover{
+    box-shadow: unset;
+}
 .comments-wrapper {
     width: 100%;
     padding: 0 60px 60px 60px;
@@ -25,7 +33,7 @@ main{
 
     p {
         color: var(--grayscale-seasalt);
-
+        word-break: break-all;
         /* Poppins Font/Poppins Regular/base */
         font-family: var(--font-poppins), sans-serif;
         font-size: var(--font-size-base);
@@ -49,6 +57,7 @@ main{
     p {
         color: var(--neutrals-white);
         /* Poppins Font/Poppins Regular/2xl */
+        word-break: break-all;
         font-family: var(--font-poppins), sans-serif;
         font-size: var(--font-size-lg);
         font-weight: var(--font-weight-regular);
@@ -58,5 +67,18 @@ main{
 @media (max-width: 1051px) {
     main {
         width: 74.444%;
+    }
+    .comments-wrapper {
+        padding: 0;
+    }
+}
+@media (max-width: 986px) {
+    .left-sidebar {
+        width: 268px !important;
+    }
+}
+@media (max-width: 582px) {
+    main {
+        width: 100%;
     }
 }
