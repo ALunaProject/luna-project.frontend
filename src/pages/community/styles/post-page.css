@@ -21,7 +21,7 @@ main{
     padding: 15px 30px;
     flex-direction: column;
     gap: 15px;
-    border-bottom: 1px solid var(--neutrals-white);
+    border-bottom: 1px solid var(--blue-violet-desat-300);
 
     p {
         color: var(--grayscale-seasalt);
