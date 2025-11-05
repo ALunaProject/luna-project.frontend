@@ -84,7 +84,7 @@ h2 {
 
 .poster > img:hover {
     box-shadow: 0 0 2px 2px var(--blueviolet-800);
-    transition: box-shadow 0.4s ease-in-out;
+    transition: box-shadow 0.15s ease-in-out;
 }
 
 .poster > p {
@@ -102,35 +102,47 @@ h2 {
 }
 
 .playlist-wrapper {
-    width: 287px;
-    height: 230px;
     display: flex;
-    padding: 20px;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    
     gap: 10px;
     margin-top: 30px;
 
-    border-radius: 10px;
-    background: var(--pantie-blue-500);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 20px 0 #0B0810;
 }
 
-.playlist > p {
+.playlist-wrapper p {
     font-family: var(--font-poppins);
     font-size: var(--font-size-lg);
-    font-weight: 400;
-    line-height: var(--line-height-loose);
-    font-style: normal;
 
-    justify-content: flex-start;
+}
+
+.playlist-wrapper img {
+    width: 24px;
+    height: 24px;
+
 }
 
 .playlist {
+    width: 287px;
+    height: 230px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    padding: 20px;
     gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 20px 0 #0B0810;
+}
+
+.playlist1 {
+    background: var(--pantie-blue-500);
+    
+}
+.playlist2 {
+    background: var(--green-grass-500);
+
+}
+.playlist3 {
+    background: var(--clockwork-orange-500);
 }
 
 .joguei-line {
@@ -140,6 +152,7 @@ h2 {
     font-weight: 400;
     line-height: var(--line-height-loose);
     font-style: normal;
+    align-items: center;
 
     gap: 12px;
 
@@ -152,11 +165,64 @@ h2 {
     font-weight: 400;
     line-height: var(--line-height-loose);
     font-style: normal;
+    align-items: center;
 
     gap: 12px;
 }
 
+.comments {
+    width: 100%;
+    display: flex;
+    padding: 15px 30px;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid var(--blueviolet-300);
+    
 
+    p {
+        color: var(--grayscale-seasalt);
+
+        /* Poppins Font/Poppins Regular/base */
+        font-family: var(--font-poppins), sans-serif;
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--line-height-loose);
+    }
+}
+
+.comments-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.link {
+    justify-self: end;
+}
+
+.profile-comments {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+    gap: 12.17px;
+
+    img {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+
+    }
+
+    p {
+        color: var(--neutrals-white);
+        /* Poppins Font/Poppins Regular/2xl */
+        font-family: var(--font-poppins), sans-serif;
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--line-height-loose);
+    }
+}
 
 
 
