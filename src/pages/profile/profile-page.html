@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="../../assets/images/luna-logo.png"
-      type="image/x-icon"
-    />
-    <title>Luna | Seu Perfil</title>
-    <link rel="stylesheet" href="../profile/styles/profile-page.css" />
-    <link rel="stylesheet" href="../../components/SideBar/styles.css" />
-  </head>
-  <body>
-    <aside class="left-sidebar">
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna | Seu perfil </title>
+  <link rel="shortcut icon" href="../../assets/images/luna-logo-xl.png" type="favicon luna">
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="../../components/SideBar/styles.css">
+  <link rel="stylesheet" href="../profile/styles/profile-page.css">
+</head>
+<body>
+
+  <aside class="left-sidebar">
       <div class="menu-top">
         <img src="../../assets/images/luna-logo.png" alt="luna-logo" />
         <h6>Luna</h6>
       </div>
       <div class="menu-list">
-        <a href="#" class="link">
+        <a href="../news/feed-news-page.html" class="link">
           <img src="../../assets/icons/folder-icon.svg" alt="folder-icon" />
-          <p>NewsPage</p>
+          <p>Nóticias</p>
         </a>
-        <a href="#" class="link">
+        <a href="../games/find-games-page.html" class="link">
           <img src="../../assets/icons/book-square.svg" alt="library-icon" />
-          <p>FindGame</p>
+          <p>Catálogo de Jogos</p>
         </a>
-        <a href="#" class="link">
+        <a href="../community/find-people.html" class="link">
           <img src="../../assets/icons/people.svg" alt="group-icon" />
-          <p>FindPeople</p>
+          <p>Comunidade</p>
         </a>
       </div>
       <div class="menu-bottom">
@@ -39,15 +37,15 @@
               src="../../assets/icons/message-question.svg"
               alt="question-box-icon"
             />
-            <p>About Luna</p>
+            <p>Sobre a Luna</p>
           </a>
         </div>
 
         <div class="profile">
-          <div class="avatar">
+          <a href="../profile/profile-page.html" class="avatar">
             <img src="../../assets/images/avatar-icon.png" alt="user-icon" />
             <p class="avatar-name">@chimbinha</p>
-          </div>
+          </a>
           <a href="">
             <img src="../../assets/icons/menu.svg" alt="three-dots-icon" />
           </a>
@@ -55,67 +53,82 @@
       </div>
     </aside>
 
-    <main class="main-profile">
-      <img src="../../assets/images/profileHeader.png" alt="Profile header" />
-      <div class="fosae">
-        <img src="../../assets/images/profile-icon.png" alt="Profile icon" />
-
-      </div>
-      <h3>@estelionathalia</h3>
-      <p>Essa é minha bio, eu gosto de batata e jogos</p>
-      <div class="my-tags">
-        <div class="tag">
-          <p>FPS</p>
-        </div>
-        <div class="tag">
-          <p>Indie</p>
-        </div>
-        <div class="tag">
-          <p>COOP</p>
-        </div>
-        <div class="tag">
-          <p>Building</p>
-        </div>
-        <div class="tag">
-          <p>Single-player</p>
-        </div>
-      </div>
-      <section class="favoritos">
-        <h2>Favoritos</h2>
-        <div class="lista-favoritos">
-          <div class="card-jogo">
-            <img
-              src="../../assets/images/lol-poster.png"
-              alt="Capa do jogo League of Legends"
-            />
-            <p class="titulo-jogo">League of Legends</p>
+    <main>
+      <section class="avatar-conteiner">
+          <div class="banner">
+            <img src="../../assets/images/profileheader.png" alt="profile banner">
           </div>
-
-          <div class="card-jogo">
-            <img
-              src="../../assets/images/lol-poster.png"
-              alt="Capa do jogo League of Legends"
-            />
-            <p class="titulo-jogo">League of Legends</p>
+          <div class="avatar-info">
+            <img src="../../assets/images/profile-icon.png" alt="profile icon">
+            <h3>@estelionathalia</h3>
+            <p>Essa é minha bio, eu gosto de jogos e batata</p>
+            <div class="random-tags">
+              <div class="tags">
+                <p>FPS</p>
+              </div>
+              <div class="tags">
+                <p>COOP</p>
+              </div>
+              <div class="tags">
+                <p>Single player</p>
+              </div>
+              <div class="tags">
+                <p>Building</p>
+              </div>
+              <div class="tags">
+                <p>Terror</p>
+              </div>
+              <div class="tags">
+                <p>Puzzle</p>
+              </div>
+              <div class="tags">
+                <p>Cozy</p>
+              </div>
+            </div>
           </div>
-
-          <div class="card-jogo">
-            <img
-              src="../../assets/images/lol-poster.png"
-              alt="Capa do jogo League of Legends"
-            />
-            <p class="titulo-jogo">League of Legends</p>
-          </div>
-
-          <div class="card-jogo">
-            <img
-              src="../../assets/images/lol-poster.png"
-              alt="Capa do jogo League of Legends"
-            />
-            <p class="titulo-jogo">League of Legends</p>
-          </div>
-        </div>
       </section>
+      <h2>Favoritos</h2>
+      <div class="poster-wrapper">
+        <div class="poster">
+          <img src="../../assets/images/alienIsolation-poster.png" alt="Alien Isolation poster">
+          <p>Alien Isolation</p>
+        </div>
+        <div class="poster">
+          <img src="../../assets/images/stardewValley-poster.png" alt="Stardew Valley poster">
+          <p>Stardew Valley</p>
+        </div>
+        <div class="poster">
+          <img src="../../assets/images/valorant-poster.png" alt="Valorant poster">
+          <p>Valorant</p>
+        </div>
+        <div class="poster">
+          <img src="../../assets/images/deathStranding-poster.png" alt="">
+          <p>Death Stranding</p>
+        </div>
+      </div>
+      <div class="playlist-wrapper">
+        <div class="playlist">
+          <p>Joguei</p>
+          <div class="joguei-line">
+            <img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/990080/a9ecb94f249768d0ee5ccecbffe8d8c06d9bed59.jpg" alt="Hogwarts legacy icon">
+            <p>Hogwarts Legacy</p>
+          </div>
+          <div class="joguei-line">
+            <img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/214490/7bf964858835da75630a43ac0ddbf0f66a40902f.jpg" alt="Alien isolation icon">
+            <p>Alien Isolation</p>
+          </div>
+          <div class="joguei-line">
+            <img src="https://cdn.fastly.steamstatic.com/steamcommunity/public/images/apps/1593500/8aa5e7e0e55cad682c7f2e65e075c3bc04dfc1cb.jpg" alt="God of war icon">
+            <p>God Of War</p>
+          </div>
+          <div class="add-more">
+            <img src="../../assets/icons/add-square.svg" alt="add square">
+            <p>Mais</p>
+          </div>
+        </div>
+      </div>
+
     </main>
-  </body>
+
+</body>
 </html>
