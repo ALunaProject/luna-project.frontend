@@ -85,6 +85,9 @@ img {
     align-items: center;
     flex-wrap: wrap;
 
+    .link {
+        width: 100%;
+    }
 
 }
 .profile-wrapper {
@@ -163,13 +166,23 @@ img {
         width: 74.444%;
     }
 }
-/*mobile*/
-@media (max-width: 585px) {
-    .main{
-        padding: 30px 0;
+@media (max-width: 582px) {
+    main {
+        width: 100%;
+        padding: 75px 0;
+
+        h2 {
+            font-size: var(--font-size-3xl);
+        }
     }
     .post-card-wrapper {
-        padding: 0 0;
+        padding: 0 30px;
+    }
+    }
+/*mobile*/
+@media (max-width: 585px) {
+    .main {
+        padding: 30px 0;
     }
     .profile-wrapper {
         img {
