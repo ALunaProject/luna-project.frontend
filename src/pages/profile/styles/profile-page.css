@@ -34,6 +34,8 @@ main {
     font-family: var(--font-poppins);
     font-size:var(--font-size-xl);
     line-height: var(--line-height-loose);
+
+    text-align: center;
 }
 
 .random-tags{
@@ -131,19 +133,40 @@ h2 {
     gap: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 20px 0 #0B0810;
+
+    flex: 1;
 }
 
 .playlist1 {
-    background: var(--pantie-blue-500);
-    
+    background: var(--pantie-blue-700);
+    border: 1px solid var(--pantie-blue-700);
+
 }
+.playlist1:hover{
+    box-shadow: 0 0 20px 5px var(--pantie-blue-700);
+    transition: box-shadow 0.15s ease-in-out;
+}
+
 .playlist2 {
-    background: var(--green-grass-500);
+    background: var(--green-grass-700);
+    border: 1px solid var(--green-grass-700);
+
+}
+.playlist2:hover{
+    box-shadow: 0 0 20px 5px var(--green-grass-700);
+    transition: box-shadow 0.15s ease-in-out;
 
 }
 .playlist3 {
-    background: var(--clockwork-orange-500);
+    background: var(--clockwork-orange-700);
+    border: 1px solid var(--clockwork-orange-700);
+
 }
+.playlist3:hover {
+    box-shadow: 0 0 20px 5px var(--clockwork-orange-700);
+    transition: box-shadow 0.15s ease-in-out;
+}
+   
 
 .joguei-line {
     display: flex;
@@ -225,4 +248,19 @@ h2 {
 }
 
 
+@media (max-width: 834px){
+    .poster-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .playlist-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 393px){
+    h2 {
+        font-size: var(--font-size-4xl);
+    }
+}

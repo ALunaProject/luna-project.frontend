@@ -109,6 +109,10 @@ aside {
   gap: 8px;
 }
 
+.avatar-name {
+  font-size: var(--font-size-base)
+}
+
 .search-bar {
   display: flex;
   padding: 10px 14px;
