@@ -1,6 +1,7 @@
 body {
     background-color: #160F1D;
     display: flex;
+    font-family: var(--font-poppins), sans-serif;
 }
 
 .main-game-page {
@@ -30,4 +31,120 @@ body {
     height: 100%;
     background: linear-gradient(180deg, rgba(11, 8, 16, 0.00) 22.36%, rgba(32, 12, 53, 0.72) 67.74%, var(--blue-violet-desat-600, #160F1D) 94.57%);
     z-index: 1;
+}
+
+.game-container {
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    padding: 10px 30px 30px 30px;
+    margin-top: -300px;
+    z-index: 1;
+}
+
+.game-page-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.game-page-info > h1 {
+    font-size: var(--font-size-4xl);
+}
+
+.game-tags {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag > p {
+    font-family: var(--font-abeezee), sans-serif;
+    font-size: 1.6rem;
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid var(--blueviolet-700);
+    background-color: var(--blueviolet-700);
+}
+
+.game-page-description > p {
+    font-size: var(--font-size-xl);
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.ratings-wrapper {
+    display: flex;
+    gap: 20px;
+
+}
+
+.overall-score {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.rating-card-title {
+    font-size: var(--font-size-base);
+}
+
+.score-card {
+    display: flex;
+    width: 153px;
+    padding: 10px;
+    align-items: center;
+    gap: 5px;
+
+    border-radius: 8px;
+    background: var(--blue-violet-desat-800, #1D1728);
+
+    /* PostCardShadow */
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 20px 0 #0B0810;
+}
+
+.rate-overall {
+    font-size: 9.6rem;
+    letter-spacing: -9.6px;
+    padding-right: 11px;
+    line-height: 90%;
+}
+
+.overall {
+    font-size: 2.0rem;
+    text-wrap: nowrap;
+}
+
+.ratings {
+    width: 153px;
+}
+
+.score-card {
+    display: flex;
+    gap: 5px;
+}
+
+.price-wrapper h3 {
+    font-size: var(--font-size-2xl);
 }
