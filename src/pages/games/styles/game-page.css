@@ -264,4 +264,7 @@ body {
     .rating-wrapper {
         flex-direction: column;
     }
+    .ratings {
+        margin-left: unset;
+    }
 }
