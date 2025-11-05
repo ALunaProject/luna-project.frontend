@@ -9,7 +9,13 @@ body {
 }
 
 .left-sidebar {
-    width: 332px;
+    width: 268px; // ou só deleta a mudança que você ja tinha feito
+}
+
+@media (max-width: 834px) {
+    main {
+        width: 74.444%;
+    }
 }
 
 .avatar-name {
