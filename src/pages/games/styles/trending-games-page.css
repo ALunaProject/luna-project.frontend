@@ -12,6 +12,11 @@ body {
     width: 332px;
 }
 
+.avatar-name {
+    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-base);
+}
+
 .title-wrapper {
     display: flex;
     width: 100%;
