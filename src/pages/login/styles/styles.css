@@ -180,3 +180,8 @@ form p a {
     padding: 70px 30px 30px 30px;
   }
 }
+.dev-mode {
+  width: 4px;
+  height: 6px;
+  background-color: rgba(109, 109, 109, 0.096);
+}
