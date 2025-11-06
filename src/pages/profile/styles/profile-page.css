@@ -3,16 +3,20 @@
 main {
     max-width: unset;
     padding: unset;
+    gap: 30px;
 
 }
 
 .banner > img {
     width: 100%;
+    height: 30vh;
+    object-fit: cover;
 }
 
 .avatar-conteiner{
     width: 100%;
 }
+
 
 .avatar-info{
     display: flex;
@@ -22,6 +26,12 @@ main {
     width: 100%;
     margin-top: -100px;
     gap: 30px;
+}
+
+.avatar-info > img {
+    width: 202px;
+    height: 202px;
+    border-radius: 100%;
 }
 
 .avatar-info > h3{
@@ -69,13 +79,13 @@ h2 {
     font-family: var(--font-poppins);
     font-weight: 400;
     font-style: normal;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 .poster-wrapper {
     display: flex;
     gap: 30px;
-    padding: 30px;
+    padding: 0 30px;
 
 }
 
@@ -110,7 +120,6 @@ h2 {
     
     gap: 10px;
     margin-top: 30px;
-    padding: 30px;
 
 }
 
@@ -223,8 +232,8 @@ h2 {
     align-items: center;
 }
 
-.link {
-    justify-self: end;
+.comments-wrapper .link {
+    align-self: end;
 }
 
 .profile-comments {
