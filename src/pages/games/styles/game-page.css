@@ -84,6 +84,60 @@ body {
     font-size: var(--font-size-xl);
 }
 
+.game-page-info .link {
+    align-self: end;
+}
+
+.comments-wrapper {
+    width: 100%;
+
+    .comments:last-child {
+        border-bottom: none;
+    }
+}
+
+.comments {
+    width: 100%;
+    display: flex;
+    padding: 15px 30px;
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid var(--blue-violet-desat-300);
+
+    p {
+        color: var(--grayscale-seasalt);
+        word-break: break-all;
+        /* Poppins Font/Poppins Regular/base */
+        font-family: var(--font-poppins), sans-serif;
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--line-height-loose);
+    }
+}
+
+.profile-comments {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 15px 0px;
+    gap: 12.17px;
+
+    img {
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+    }
+
+    p {
+        color: var(--neutrals-white);
+        /* Poppins Font/Poppins Regular/2xl */
+        word-break: break-all;
+        font-family: var(--font-poppins), sans-serif;
+        font-size: var(--font-size-lg);
+        font-weight: var(--font-weight-regular);
+        line-height: var(--line-height-loose);
+    }
+}
+
 .rating-container {
     display: flex;
     width: 356px;
