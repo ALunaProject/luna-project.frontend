@@ -13,6 +13,11 @@ body {
     width: 268px;
 }
 
+.avatar-name {
+    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-base);
+}
+
 .hero-image {
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -75,10 +80,26 @@ body {
     font-size: var(--font-size-xl);
 }
 
-.game-media {
-    display: flex;
-    justify-content: center;
-}
+/*.game-media {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    flex-direction: column;*/
+/*    gap: 20px;*/
+/*}*/
+
+/*.game-media img {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.thumbnails-wrapper {*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    gap: 10px;*/
+/*}*/
+
+/*.thumbnails-wrapper img {*/
+/*    width: 100%;*/
+/*}*/
 
 .rating-container {
     display: flex;
@@ -266,5 +287,122 @@ body {
     }
     .ratings {
         margin-left: unset;
+    }
+}
+
+.carousel-container {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+}
+
+.game-media {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.main-image {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: none;
+}
+
+.main-image img.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel-btn {
+    display: none;
+}
+
+.thumbnails-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+.thumbnails-wrapper img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.6;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+}
+
+.thumbnails-wrapper img:hover {
+    opacity: 0.8;
+}
+
+.thumbnails-wrapper img.active {
+    opacity: 1;
+    border-color: var(--blueviolet-700);
+    box-shadow: var(--shadow-card);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: var(--blueviolet-700);
+    width: 30px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .main-image {
+        height: 400px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .thumbnails-wrapper img {
+        width: 150px;
+        height: 90px;
     }
 }
