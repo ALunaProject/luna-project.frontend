@@ -84,16 +84,19 @@ body {
     font-size: var(--font-size-xl);
 }
 
-.game-page-info .link {
-    align-self: end;
-}
 
 .comments-wrapper {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 
     .comments:last-child {
         border-bottom: none;
     }
+}
+
+.comments-wrapper .link {
+    align-self: end;
 }
 
 .comments {
@@ -284,58 +287,6 @@ body {
     align-items: center;
 }
 
-@media (max-width: 1200px) {
-    .game-container {
-        flex-direction: column;
-    }
-    .rating-container{
-        width: 100%;
-    }
-    .rating-wrapper {
-        width: 100%;
-    }
-    .overall-score {
-        margin: 0 auto;
-        width: 100%;
-    }
-    .ratings {
-        margin-left: auto;
-    }
-}
-
-@media (max-width: 834px) {
-    main {
-        width: 74.444%;
-    }
-}
-
-@media (max-width: 760px) {
-    .game-page-info h1 {
-        font-size: var(--font-size-3xl);
-    }
-}
-
-@media (max-width: 647px) {
-    .left-sidebar {
-        display: none;
-    }
-    main {
-        width: unset;
-    }
-}
-
-@media (max-width: 414px) {
-    .rating-wrapper {
-        flex-direction: column;
-    }
-    .ratings {
-        margin-left: unset;
-    }
-    .stores-wrapper {
-        justify-content: center;
-    }
-}
-
 .carousel-container {
     max-width: 1200px;
     width: 100%;
@@ -436,6 +387,31 @@ body {
     border-radius: 5px;
 }
 
+@media (max-width: 1200px) {
+    .game-container {
+        flex-direction: column;
+    }
+    .rating-container{
+        width: 100%;
+    }
+    .rating-wrapper {
+        width: 100%;
+    }
+    .overall-score {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .ratings {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 834px) {
+    main {
+        width: 74.444%;
+    }
+}
+
 @media (max-width: 768px) {
     .main-image {
         height: 400px;
@@ -450,4 +426,30 @@ body {
         width: 150px;
         height: 90px;
     }
+
+    .game-page-info h1 {
+        font-size: var(--font-size-3xl);
+    }
 }
+
+@media (max-width: 647px) {
+    .left-sidebar {
+        display: none;
+    }
+    main {
+        width: unset;
+    }
+}
+
+@media (max-width: 414px) {
+    .rating-wrapper {
+        flex-direction: column;
+    }
+    .ratings {
+        margin-left: unset;
+    }
+    .stores-wrapper {
+        justify-content: center;
+    }
+}
+
