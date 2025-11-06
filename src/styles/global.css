@@ -35,7 +35,7 @@ main {
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none;
-  max-width: calc(100vw - 536px);
+  transition: 0.15s ease-in;
 }
 @media (max-width: 834px) {
     main {
