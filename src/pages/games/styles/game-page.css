@@ -266,9 +266,14 @@ body {
     padding: 11px;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.2s ease-in-out;
 
     border-radius: 8px;
     background: var(--blue-violet-desat-800, #1D1728);
+}
+
+.buy-game-card:hover {
+    background: var(--blue-violet-desat-400);
 }
 
 .buy-game-card p {
@@ -388,7 +393,8 @@ body {
     width: 30px;
     border-radius: 5px;
 }
-@media (max-width: 1260px) {
+
+@media (max-width: 1306px) {
     .game-container {
         flex-direction: column;
         align-items: center;
@@ -413,16 +419,6 @@ body {
     }
     .rating-container{
         width: 100%;
-    }
-    .rating-wrapper {
-        width: 100%;
-    }
-    .overall-score {
-        margin: 0 auto;
-        width: 100%;
-    }
-    .ratings {
-        margin-left: auto;
     }
 }
 
