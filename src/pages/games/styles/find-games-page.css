@@ -18,6 +18,11 @@ body {
     max-width: calc(100vw - 536px);
 }
 
+.avatar-name {
+    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-base);
+}
+
 .title-wrapper {
     display: flex;
     width: 100%;
@@ -76,7 +81,7 @@ body {
 }
 
 .trending-games-tag:hover {
-    box-shadow: var(--shadow-hover);
+    box-shadow: var(--shadow-toggle-option1);
 }
 
 .trending-games-tag p {
