@@ -230,6 +230,7 @@ h2 {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    padding: 0 20px;
 }
 
 .comments-wrapper .link {
@@ -246,7 +247,7 @@ h2 {
         width: 45px;
         height: 45px;
         border-radius: 100%;
-
+        object-fit: cover;
     }
 
     p {
@@ -259,6 +260,17 @@ h2 {
     }
 }
 
+@media (max-width: 1200px) {
+    .playlist-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .left-sidebar {
+        display: none;
+    }
+}
 
 @media (max-width: 834px){
     .poster-wrapper {
@@ -271,10 +283,6 @@ h2 {
     height: 180px;
     }
 
-    .playlist-wrapper {
-        flex-direction: column;
-
-    }
 }
 
 @media (max-width: 393px){
