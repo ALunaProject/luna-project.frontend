@@ -296,22 +296,3 @@ h2 {
     }
 
 }
-
-
-@media (max-width: 1051px) {
-    main {
-        width: 74.444%;
-    }
-}
-
-@media (max-width: 986px) {
-    .left-sidebar {
-        width: 268px !important;
-    }
-}
-
-@media (max-width: 582px) {
-    main {
-        width: 100%;
-    }
-}
