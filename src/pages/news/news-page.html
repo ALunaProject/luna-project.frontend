@@ -138,19 +138,58 @@
           disso, espera-se que mapas clássicos de Call of Duty: Modern Warfare
           III sejam remasterizados e inseridos, ao lado de conteúdo novo.
         </p>
-        <div class="images-preview">
-          <img src="../../assets/images/cod-mw-4-leak.jpg" alt="cod-news" />
-          <div class="preview-carousel">
-            <img
-              src="../../assets/images/cod-mw-4-leak.jpg"
-              alt="carousel-imgs"
-            />
-            <img src="../../assets/images/cod-img2.jpg" alt="carousel-imgs" />
-            <img src="../../assets/images/cod-img3.jpg" alt="carousel-imgs" />
-            <img src="../../assets/images/cod-img4.jpg" alt="carousel-imgs" />
+
+        <div class="carousel-container">
+          <div class="game-media">
+            <div class="main-image">
+              <img src="../../assets/images/cod-mw-4-leak.jpg" alt="gameplay-2" class="active"
+                   data-index="0">
+              <img src="../../assets/images/cod-ghost.jpg" alt="corridor-scene" data-index="1">
+              <img src="../../assets/images/cod-img3.jpg" alt="gameplay-1" data-index="2">
+              <img src="../../assets/images/cod-img4.jpg" alt="location-1" data-index="3">
+              <img src="../../assets/images/cod-gameplay1.jpg" alt="location-1" data-index="4">
+              <img src="../../assets/images/cod-gameplay2.jpg" alt="location-1" data-index="5">
+
+
+
+              <div class="carousel-controls">
+                <button class="carousel-btn prev-btn" aria-label="Imagem anterior">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                  </svg>
+                </button>
+                <button class="carousel-btn next-btn" aria-label="Próxima imagem">
+                  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="carousel-indicators">
+                <div class="indicator active" data-index="0"></div>
+                <div class="indicator" data-index="1"></div>
+                <div class="indicator" data-index="2"></div>
+                <div class="indicator" data-index="3"></div>
+                <div class="indicator" data-index="4"></div>
+                <div class="indicator" data-index="5"></div>
+              </div>
+
+            </div>
+
+            <div class="thumbnails-wrapper">
+              <img src="../../assets/images/cod-mw-4-leak.jpg" alt="gameplay-2" class="active"
+                   data-index="0">
+              <img src="../../assets/images/cod-ghost.jpg" alt="corridor-scene" data-index="1">
+              <img src="../../assets/images/cod-img3.jpg" alt="gameplay-1" data-index="2">
+              <img src="../../assets/images/cod-img4.jpg" alt="location-1" data-index="3">
+              <img src="../../assets/images/cod-gameplay1.jpg" alt="location-1" data-index="4">
+              <img src="../../assets/images/cod-gameplay2.jpg" alt="location-1" data-index="5">
+            </div>
           </div>
         </div>
+
       </div>
     </main>
+    <script src="../games/helpers/carousel.js"></script>
   </body>
 </html>
