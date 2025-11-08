@@ -180,8 +180,24 @@ form p a {
     padding: 70px 30px 30px 30px;
   }
 }
-.dev-mode {
-  width: 4px;
+.dev-mode {;
   height: 6px;
   background-color: rgba(109, 109, 109, 0.096);
+}
+
+.neon-text {
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: 0 0 5px var(--blueviolet-blueviolet), 0 0 10px var(--blueviolet-blueviolet), 0 0 20px var(--blueviolet-blueviolet), 0 0 40px var(--blueviolet-blueviolet), 0 0 80px var(--blueviolet-blueviolet);
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+
+        text-shadow: 0 0 10px var(--mclaren-orange), 0 0 20px var(--mclaren-orange), 0 0 40px var(--mclaren-orange), 0 0 80px var(--mclaren-orange), 0 0 160px var(--mclaren-orange);
+    }
+    100% {
+        text-shadow: 0 0 5px var(--blueviolet-blueviolet), 0 0 10px var(--blueviolet-blueviolet), 0 0 20px var(--blueviolet-blueviolet), 0 0 40px var(--blueviolet-blueviolet), 0 0 80px var(--blueviolet-blueviolet);
+    }
 }
