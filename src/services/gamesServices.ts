@@ -1,4 +1,4 @@
-import {api} from "@/api/api";
+import {api} from "@/utils/api";
 
 export async function getAllGames(): Promise<GamesDTO[]> {
     try {

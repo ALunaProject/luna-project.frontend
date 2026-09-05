@@ -13,7 +13,7 @@ export default function ListsCard(List: ListProps) {
             <h6>{List.label}</h6>
             <div className={s.gamesWrapper}>
                 {List.games.map((game) => (
-                    <Link key={game} href="./">
+                    <Link key={game} href="">
                         {/* depois temq transformar game num obj e reutilizar na app tpda, e dps arrumar a url dinamica*/}
                         <Image
                             src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXefoDt5LxS9Vwl-WUv4HdLmhwkKRuyWw6OwmoNEfBNVfJKHTmm8u-8E0&s=10'

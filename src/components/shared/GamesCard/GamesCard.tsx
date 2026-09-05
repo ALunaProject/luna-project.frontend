@@ -1,7 +1,7 @@
 import s from "./styles.module.scss"
 import Image from "next/image";
 import Link from "next/link";
-import Tags from "@/components/shared/Tags/Tags";
+import Tags from "@/components/ui/Tags/Tags";
 
 export default function GamesCard(Game: GamesDTO) {
     return (

@@ -3,12 +3,12 @@ import Sidebar from "@/components/layout/Sidebar/Sidebar";
 import s from "./styles.module.scss";
 import Image from "next/image";
 import React from "react";
-import ListsCard from "@/components/layout/ListsCard/ListsCard";
-import GamesCard from "@/components/layout/GamesCard/GamesCard";
-import Comments from "@/components/layout/Comments/Comments";
+import ListsCard from "@/components/shared/ListsCard/ListsCard";
+import GamesCard from "@/components/shared/GamesCard/GamesCard";
+import Comments from "@/components/shared/Comments/Comments";
 import {getUserByUsername} from "@/services/userSerices";
 import {getAllComments} from "@/services/commentsServices";
-import {DEFAULT_AVATAR, DEFAULT_BANNER} from "@/assets/images/contants";
+import {DEFAULT_AVATAR, DEFAULT_BANNER} from "@/utils/contants";
 import {getAllGames} from "@/services/gamesServices";
 
 export default async function UserPage({params}: UserPageProps) {

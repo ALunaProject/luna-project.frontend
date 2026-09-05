@@ -7,7 +7,7 @@ export default function UserNotFound() {
             <h1>
                 user not found
             </h1>
-            <Link href="/">go back</Link>
+            <Link href="/public">go back</Link>
         </>
     );
 }
