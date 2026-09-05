@@ -3,16 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import Tags from "@/components/shared/Tags/Tags";
 
-interface GamesCardProps {
-    name: string;
-    imageUrl: string;
-    tags: string[];
-}
-
-export default function GamesCard(Game: GamesCardProps) {
+export default function GamesCard(Game: GamesDTO) {
     return (
         <Link href={Game.name} className={s.gamesCard}>
-            <Image src={Game.imageUrl} alt={`${Game.name} preview`} width={293.25} height={150}/>
+            <Image src={Game.previewImg} alt={`${Game.name} preview`} width={293.25} height={150}/>
             <div className={s.gameProps}>
                 <p>{Game.name}</p>
                 <div className={s.tagsWrapper}>
