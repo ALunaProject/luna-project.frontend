@@ -1,19 +1,13 @@
 import s from "./styles.module.scss"
 import Image from "next/image"
 import Link from "next/link"
-import Tags from "@/components/shared/Tags/Tags"
+import Tags from "@/components/ui/Tags/Tags"
 
-interface GamesCardProps {
-	name: string
-	imageUrl: string
-	tags: string[]
-}
-
-export default function GamesCard(Game: GamesCardProps) {
+export default function GamesCard(Game: GamesDTO) {
 	return (
 		<Link href={Game.name} className={s.gamesCard}>
 			<Image
-				src={Game.imageUrl}
+				src={Game.previewImg}
 				alt={`${Game.name} preview`}
 				width={293.25}
 				height={150}

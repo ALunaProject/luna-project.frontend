@@ -24,39 +24,14 @@ A estrutura do projeto é organizada para facilitar a manutenção e o desenvolv
 │
 ├── app/                         # Rotas e páginas do Next.js (Page Router)
 │   │
-│   ├── _app.tsx                 # Componente principal da aplicação (Provider, Layout)
-│   ├── _document.tsx            # Personalização do HTML (meta tags, fontes)
-│   │
-│   ├── login/                   # Página de Login
-│   │   ├── index.tsx            # Componente principal da página
+│   ├── app.tsx                  # Componente principal da aplicação (Provider, Layout)
+│   ├── layout.tsx               # Personalização do HTML (meta tags, fontes)
+│   ├── login/                   # Página estática
+│   │   ├── page.tsx             # Componente principal da página
 │   │   └── styles.module.css    # Estilos específicos da página
-│   │
-│   ├── signup/                  # Página de Cadastro
-│   │   ├── index.tsx
+│   ├── [username]/              # Rota Dinâmica da página do perfil do usuário
+│   │   ├── page.tsx               
 │   │   └── styles.module.css
-│   │
-│   ├── news/                    # Página de Notícias
-│   │   ├── index.tsx
-│   │   ├── styles.module.css
-│   │   └── [id]/                # Rota dinâmica para notícia específica
-│   │       ├── index.tsx
-│   │       └── styles.module.css
-│   │
-│   ├── discovery/               # Página de Descoberta de Jogos
-│   │   ├── index.tsx
-│   │   └── styles.module.css
-│   │
-│   ├── game-purpose/            # Página de Propósito do Jogo
-│   │   ├── index.tsx
-│   │   ├── styles.module.css
-│   │   └── [gameId]/            # Rota dinâmica para jogo específico
-│   │       ├── index.tsx
-│   │       └── styles.module.css
-│   │
-│   ├── lfg-posts/               # Página de Posts (Looking For Game)
-│   │   ├── index.tsx
-│   │   └── styles.module.css
-│   │
 │   └── api/                     # API Routes (Next.js - opcional)
 │       └── auth/
 │           └── [...nextauth].ts # Configuração de autenticação (se usar NextAuth)
@@ -129,9 +104,9 @@ A estrutura do projeto é organizada para facilitar a manutenção e o desenvolv
 │   ├── useGameSearch.ts        # Busca de jogos
 │   └── usePagination.ts        # Paginação
 │
-├── contexts/                   # Contextos React
-│   ├── AuthContext.tsx         # Contexto de autenticação
-│   └── ThemeContext.tsx        # Contexto de tema
+├── services/                   # Serviços da aplicaçãp
+│   ├── gamesServices.tsx 
+│   └── userServcies.tsx 
 │
 ├── styles/                     # Estilos globais
 │   ├── globals.css             # Estilos CSS globais
