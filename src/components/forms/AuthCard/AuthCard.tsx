@@ -57,10 +57,10 @@ function AuthCard({ variant }: AuthCardProps) {
 
             localStorage.setItem(STORAGE_KEYS.TOKEN, response.token)
 
+            // Redireciona a pagina
             if (isSignup) {
                 router.push("/login")
             } else {
-                console.log(response) // tirar isso aqui depois
                 router.push(`/${response.username}`)
             }
 
