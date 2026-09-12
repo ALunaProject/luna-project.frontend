@@ -19,4 +19,5 @@ export type User = {
 
 export type AuthResponseDTO = {
     token: string
+    username: string
 }

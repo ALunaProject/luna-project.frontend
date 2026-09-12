@@ -9,6 +9,8 @@ import LockIcon from "../../../assets/icons/LockIcon"
 import Eye from "../../../assets/icons/EyeIcon"
 import {loginService, signupService} from "@/services/userServices";
 import {STORAGE_KEYS} from "@/utils/contants";
+import {useRouter} from "next/navigation";
+import {router} from "next/client";
 
 type AuthCardProps = {
 	variant: "login" | "signup"
@@ -25,6 +27,9 @@ function AuthCard({ variant }: AuthCardProps) {
 
     const [loading, setLoading] = useState<boolean>(false)
     const [error, setError] = useState<string>("")
+
+    const router = useRouter()
+
 
 	const requirements = useMemo(
 		() => [
@@ -52,8 +57,13 @@ function AuthCard({ variant }: AuthCardProps) {
 
             localStorage.setItem(STORAGE_KEYS.TOKEN, response.token)
 
-            console.log(response)
-            // router.push("/username") colocar a pagina que vai aparecer depois do usuario criar a conta / fazer login
+            if (isSignup) {
+                router.push("/login")
+            } else {
+                console.log(response) // tirar isso aqui depois
+                router.push(`/${response.username}`)
+            }
+
         } catch (err: any) {
             setError(err.message || "Erro de conexão. Tente novamente.")
         } finally {
